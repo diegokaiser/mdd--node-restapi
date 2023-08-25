@@ -9,6 +9,6 @@ router.post('/', MovieController.create)
 
 router.get('/:id', MovieController.getById)
 
-router.detele('/:id', MovieController.delete)
+router.delete('/:id', MovieController.delete)
 
 router.patch('/:id', MovieController.update)
