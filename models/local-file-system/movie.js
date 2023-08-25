@@ -1,5 +1,5 @@
 import { randomUUID } from 'node:crypto'
-import { readJSON } from '../../utils.js'
+import { readJSON } from '../utils.js'
 
 // import del futuro, aun no
 // import movies fron './movies.sjon with { type: 'json' }
@@ -9,7 +9,7 @@ import { readJSON } from '../../utils.js'
 // const movies = JSON.parse(fs.readFileSync('./movies.json', 'utf-8'))
 
 // leer json en ESModules recomendado, por ahora
-const movies = readJSON('../../movies.json')
+const movies = readJSON('../movies.json')
 
 export class MovieModel {
   static async getAll ({ genre }) {
